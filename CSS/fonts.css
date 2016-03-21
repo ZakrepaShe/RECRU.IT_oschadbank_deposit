@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../FONTS/FuturaPTBold.otf') format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Demi';
+    src: url('../FONTS/FuturaPTDemi.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}

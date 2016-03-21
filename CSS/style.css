@@ -1,0 +1,1193 @@
+/* Style reset*/
+
+html, body, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5rem;
+    overflow-y: auto;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    vertical-align: middle;
+    font-style: normal;
+}
+
+/* Main styles*/
+.main-wrapper {
+    transition: all 0.3s ease;   
+    position: relative;
+}
+
+    .open-slide {
+        -ms-transform: translateX(-200px); /* IE 9 */
+        -webkit-transform: translateX(-200px); /* Safari */
+        transform: translateX(-200px);
+    }
+    
+    
+/* Side menu styles*/
+.side-menu{
+    background-color: #212628;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 240px;
+    -ms-transform: translateX(200px); /* IE 9 */
+    -webkit-transform: translateX(200px); /* Safari */
+    transform: translateX(200px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    color: #fff;
+}
+
+    .side-menu ul {
+        padding: 10px 0 0 0;   
+    }
+
+    .side-menu li {
+        font-family: "Roboto Condensed";
+        padding: 0;
+        font-size: 1rem;
+        padding: .375rem .375rem .375rem 40px;   
+    }
+
+    .side-menu i{
+        color: #dce123;
+        padding: 0 6px 0 15px;
+    }
+
+    .open-side {
+        -ms-transform: translateX(0); /* IE 9 */
+        -webkit-transform: translateX(0); /* Safari */
+        transform: translateX(0);
+    }
+
+
+/* Search  field side menu styles*/
+.search {
+    position: relative;
+    margin: 0 0 0.5rem;
+    height: 48px;
+    background-color: #161a1b;
+}
+
+.search input {
+    border: none;
+    padding-top: 0.8rem;
+    background-color: #161a1b;
+    color: #717779;
+}
+
+.search input:focus {
+    outline-color: #161a1b;
+}
+
+/* List side menu styles*/
+
+#oschad247 .label {
+    font-family: 'FuturaPT-Demi';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4b5153;
+    font-size: .8125rem;
+    letter-spacing: .1em;
+    line-height: 1.5rem;
+}
+
+#services .label, #cont-center.label {
+    font-family: 'FuturaPT-Demi';
+    font-size: .875rem;
+    text-transform: lowercase;
+    font-weight: 700;
+    color: #4b5153;
+    letter-spacing: .1em;
+}
+
+/* Icon side menu styles*/
+.key {
+    margin-left: -25px;
+    padding-right: 6px;
+}
+
+.place {
+    margin-left: -25px;
+    padding-right: 11px;
+}
+
+.pho {
+    margin-left: -25px;
+    padding-right: 6px;
+}
+
+.help {
+    margin-left: -25px;
+    padding-right: 6px;
+}
+
+/* Hover side menu styles*/
+.web-bank, .departments {
+    padding: 4px auto;
+    border-bottom: 1px solid #2f3335;
+    border-top: 1px solid #2f3335;
+    transition: all 0.3s ease; 
+}
+
+.web-bank:hover, .departments:hover {
+    background-color: #dce123;
+    color: #000000;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Headings styles */
+.text-wrapper {
+    padding-left: 260px;
+    transition: all 0.3s ease;
+    position: relative;    
+}
+
+.header {
+    z-index: 5;
+}
+
+/* Top heading styles */
+.header-top { 
+    font-family: 'FuturaPT-Demi';
+    height: 48px;
+    background-color: #161a1b;
+    line-height: 48px;
+    width: 100%;
+}
+
+    .header-top ul li, .header-bottom ul li {
+        display: inline;
+    }
+
+    .header-top a {
+        color: #929c9f;
+        font-size: .6875rem;
+        text-transform: uppercase;
+        padding-right: 30px;
+    }
+
+        .header-top a:active, .header-top a:hover  {
+            color: #dcdf3c;
+        }
+
+
+.top-right-menu{
+    position: absolute;
+    right: 5%;
+    top:0;
+}
+
+/* Font switcher styles */
+.font-switcher {
+    float: left;
+    margin-right: 20px;
+}
+
+    .smaller {
+        font-size: 14px !important;
+        transition: all 0.3s ease;
+    }
+
+    .font-switcher ul:hover .smaller {
+        font-size: 24px !important;
+        border-right: 1px solid #929c9f;
+    }
+
+    .font-switcher ul a {
+        text-transform: uppercase;
+        color: #929c9f;
+        font-size: 24px;
+        padding: 0;
+        transition: all 0.3s ease;
+    }
+
+    .font-switcher ul:hover a {
+        padding: 0 12px;
+    }
+
+/* Language switcher styles */
+.lang-switcher {
+    float: right;
+    color: #929c9f; 
+    padding: 0 20px;
+    transition: all 0.3s ease;   
+}
+
+    .lang-switcher a, .lang-switcher a:hover {
+        color: black;   
+        text-transform: lowercase;
+        font-size: 1rem; 
+        padding-left: 20px;
+    }
+
+    .lang-switcher:hover, .lang-switcher ul{
+        color: black;
+        background-color: #DCE123;  
+    }
+
+/* some styles are united */
+    .lang-switcher ul li:hover, .drop-head ul li:hover, 
+    .header-bottom ul li ul li:hover, .consult-switch:hover, 
+    .prereg-switch:hover, .submit:hover {
+        background-color: #f4f750;
+    }
+
+    .lang-switcher ul {
+        position: absolute;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+        top: 48px;
+        width:119px;
+        display: block;
+        z-index: 5;
+        background-color:  #DCE123;  
+    }
+    
+    /* some styles are united */
+        .lang-switcher ul li, .mobile-header ul li {
+            display: block;
+            width: 100%;
+            transition: all 0.3s ease;    
+        }
+
+        
+/* Mobile heading styles */
+.mobile-header {
+    font-family: 'FuturaPT-Demi';
+    height: 100px;
+    color: #dcdf3c;
+    line-height: 100px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #121212;
+    display: none;
+}
+
+    .drop-head {
+        text-transform: uppercase;
+        padding: 0px 40px;
+        display: inline-block;
+    }
+
+        .drop-head a, .drop-head a:hover {
+            color: black;   
+            text-transform: uppercase;
+            font-size: 1rem; 
+            padding: 0 20px;
+        }
+
+        .drop-head:hover, .drop-head ul{
+            color: black;
+            background-color:  #DCE123;  
+        }
+
+        .drop-head ul {
+            position: absolute;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -o-transition: 0.3s ease;
+            transition: 0.3s ease;
+            top: 100px;
+            display: block;
+            z-index: 5;
+            background-color:  #DCE123;  
+        }
+
+/* Dropdown head mobile menu styles */
+.dropdown-trigger {
+    position: relative;
+    float: right;
+    padding: 20px;
+    margin: 30px 50px;
+}
+
+    .dropdown-trigger:hover {
+        cursor: pointer
+    }
+    
+    .dropdown-trigger span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #dcde3b;
+        margin-left: -12px;
+        margin-top: -1px;
+        position: absolute;
+    }
+    
+    .dropdown-trigger span::before  {
+        top: -8px;
+    }
+    
+    .dropdown-trigger span::after {
+        top: 8px;
+    }
+    
+    .dropdown-trigger span::before, .dropdown-trigger span::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: inherit;
+    
+    }
+
+/* Main logo styles */
+.logo {
+    margin: 20px 0 0 220px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Bottom header styles */
+.header-bottom {
+    float: right;
+    position: absolute;
+    right: 5.25rem;
+    top: -100px;
+    z-index: 2;
+    text-align: center;
+}
+
+    .header-bottom ul li {
+        font-family: 'FuturaPT-Demi';
+        display:inline;
+        position: relative;
+        height: 36px;
+        line-height: 36px;
+        padding: 10px 18px;
+        font-size: .8125rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease;     
+    }
+
+        .header-bottom ul li:hover {
+            background-color: #DCE123;    
+        }
+
+    .header-bottom li ul {
+      position: absolute;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      top: 36px;
+      transition: all 0.3s ease; 
+    }
+
+/* some styles are united */
+.header-bottom ul > li:hover ul, 
+.lang-switcher:hover ul, 
+.drop-head:hover ul {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color:  #DCE123;
+}
+
+/* Main content styles */
+.main-content {
+    position: relative;
+    margin: -52px 0 0 0;
+}
+
+/* Preview styles */
+.preview-block {
+    min-height: 580px;
+    background-color: #7196da;
+    margin: 0 60px 0 0;
+    position: relative;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+    .preview-block h1 {
+        font-family: 'FuturaPT-Demi';
+        font-size: 6rem;
+        color: white;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+.preview-title {
+    padding: 65px 0 15px 0;
+}
+
+    .preview-block h3 {
+    padding: 0px 0 30px 0;
+    color: white;
+    }
+
+    .preview-block h5 {
+    padding: 0px 0 10px 0;
+    }
+    
+/* Slide box styles */
+.preview-info {
+    padding: 26px;
+    width: 354px;
+    position: absolute;
+    float: right;
+    bottom: -30px;
+    right: 20px;
+    background-color: #dcdf3c;
+    overflow: hidden;
+    transition: all 0.3s ease;    
+}
+
+.slideBox {
+    display: none;
+}
+
+/* Fonts styles */
+.H2 {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.H3 {
+    font-family: 'FuturaPT-Demi';
+    font-size: 2.25rem;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.H4 {
+    font-family: 'FuturaPT-Demi';
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.H5 {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.H6 {
+    font-family: 'FuturaPT-Demi';
+    font-size: 1.3125rem;
+    line-height: 1.143;
+}
+
+.P1 {
+  font-size: 1.125rem;
+  font-family: 'FuturaPT-Demi';
+  color: black;
+  line-height: 1.333;
+}
+
+.P2 {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.502);
+  line-height: 1.75;
+}
+
+.P3 {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  line-height: 1.714;
+  color: black;
+}
+
+.P4 {
+    font-family: 'Roboto Condensed';
+    font-size: 0.8125rem;
+    margin: 0;
+}
+
+/* Table block styles */
+.table {
+    margin: 40px 60px 0 0;
+    width: auto;
+}
+
+.perc {
+    display: inline-block;  
+}
+
+/* Table block dropdown button styles */
+.table .btn-group {
+    margin-top: -8px;
+    display: inline-block;
+    width: 220px;
+    font-family: 'FuturaPT-Demi';
+}
+
+    .table .btn-default{
+        text-align: left;
+        line-height: 1;
+        width: 100%;
+        height: 36px;
+        font-weight: 300;
+        font-size: 20px;
+        background-color: #fff !important;
+        color: #000 !important;
+        border: 2px solid #7196da !important;
+        padding: 4px 0 0 19px;
+        border-radius: 0px;
+        box-shadow: unset !important;
+        transition: all 0.3s ease; 
+    }
+
+    .table .btn-default:active, .table .btn-default:hover{
+        color: #fff !important;
+        background-color: #7196da !important;
+    }
+    
+    .table .caret{
+        position: absolute;
+        top: 14px;
+        right: 15px;
+        border-top: 6px solid;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+    }
+
+    .table .dropdown-menu{
+        margin: 0;
+        height: auto;
+        max-height: 150px;
+        overflow-x: hidden;
+        width: 220px;
+        border-radius: 0;
+        background-color: #7196da;
+        transition: all 0.3s ease; 
+    }
+
+    .table .dropdown-menu li a{
+        font-weight: 300 !important;
+        color: #fff !important;
+        font-size: 20px;
+        padding: 2px 18px;
+        transition: all 0.3s ease; 
+    }
+
+    .table .dropdown-menu li a:hover{
+        background-color: #557dc8;
+    }
+
+    .table .dropdown-menu li:last-child{
+        padding-bottom: 10px;
+    }
+
+
+
+.percent-date {
+    margin-top: -3px;
+    font-size: 0.75rem;
+}
+
+/* Table styles */
+.table-wrap {
+    width: 90%;
+    line-height: 1.333;
+}
+
+    .table-wrap tbody tr:nth-of-type(2n+1) {
+        background-color: #f1f5fa;
+    }
+
+    .table-wrap table {
+        width: 100%;
+    }
+
+    .table-wrap thead {
+        color: #929c9f;
+    }
+
+        .table-wrap table td {
+            padding: .75rem 0;
+        }
+
+        .table-wrap tbody tr:hover {
+            background-color: #f8f9d8;
+        }
+
+/* Comparation button styles */
+.btn-blue {
+    background-color: transparent;
+    color: #000000;
+    border: 2px #6f94de solid;
+    line-height: 48px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    padding: 0 20px 3px 20px;
+    margin-top: 50px;
+}
+
+.btn-blue:hover {
+    background-color: #6489d3;
+    border-color: #6489d3;
+}
+
+/* Loyality block styles */
+.loyalty {
+    margin-top: 55px;
+}
+
+    .loyalty .P2, .loyalty .H3{
+        color: rgb(0, 0, 0);
+        padding:  10px 0;
+    }
+  
+    .loyalty ul > li,  .helpful-info ul > li{
+        padding-left: 20px;
+        line-height: 2rem;
+    }
+
+/* Check icon styles */
+/* some styles are united */
+    .loyalty ul > li::before, .helpful-info ul > li::before {
+        content: "";
+        width: 8px;
+        height: 14px;
+        border-color: transparent #000000 #000000 transparent;
+        border-style: solid;
+        border-width: 3px;
+        -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        transform: rotate(40deg);
+        -webkit-transform-origin: 100% 100% 0;
+        -ms-transform-origin: 100% 100% 0;
+        transform-origin: 100% 100% 0;
+        position: absolute;
+        margin: 5px 0 0 -20px;
+    }
+
+/* Places block styles */
+.howto-posit {
+    margin: 90px 60px 0 0;
+    min-height: 475px;
+    position: relative;
+    background-color: #7196da;
+    color: white;
+}
+
+    .howto-posit .P2 {
+        color: white;
+    }
+
+    .howto-posit .H2, .howto-posit img {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .howto-posit iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .howto-posit button {
+        position: absolute;
+        right: 20px;
+        bottom: -91px;
+        background-color: white;
+        width: 311px;
+    }
+    
+/* Helpful info block styles */
+.helpful-info {
+    position: relative;
+    color: black;
+}
+
+    .helpful-info .P2 {
+       color: black; 
+    }
+
+    .helpful-info .H6, .helpful-info .H3{
+        font-weight: bold;
+    }
+
+    /* ul>li see .loyality*/
+
+/* Online request form styles */
+.online-request {
+    margin: 90px 60px 0 0;
+    border: 1px solid #ebed88;
+    background-color: #f8f8e7;
+    color: black;
+}
+
+    .request-wrapper {
+        width: 60%;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .request-wrapper .H3 {
+        font-weight: bold;
+    }
+
+    .request-wrapper .P2 {
+        color: black;
+    }
+
+/* Switcher styles */
+.prereg-switch {
+    margin-left: -6px;
+}
+
+/* some styles are united */
+.consult-switch, .prereg-switch, .submit {
+    display: inline-block;
+    border: 2px solid #dcdf3c;
+    line-height: 1.556;
+    padding: 7px 0;
+    transition: all 0.3s ease; 
+}
+
+    .consult-switch a, .prereg-switch a, .submit a{
+        padding: 9px 17px;
+    }
+
+    .consult-switch a:visited, .prereg-switch a:visited, .submit a:visited{
+        color: black;
+    }
+
+    .bg-switch {
+        background-color: #dcdf3c;
+    }
+
+
+/* City dropdown scrollable list styles  */
+.online-request .btn-group {
+    display: inline-block;
+    width: 100%;
+    font-family: 'FuturaPT-Demi';
+}
+
+    .online-request .btn-default{
+        text-align: left;
+        line-height: 1.8;
+        width: 100%;
+        height: 48px;
+        font-weight: 300;
+        font-size: 20px;
+        background-color: #fff !important;
+        color: #000 !important;
+        border: 2px solid #c6c6b9 !important;
+        padding: 4px 0 0 19px;
+        border-radius: 0px;
+    }
+
+    .online-request .caret{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        border-top: 6px solid;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+    }
+
+    .online-request .dropdown-menu{
+        margin: 0;
+        height: auto;
+        max-height: 150px;
+        overflow-x: hidden;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .online-request .dropdown-menu li a{
+        font-weight: 300 !important;
+        color: #000 !important;
+        font-size: 20px;
+        padding: 2px 18px;
+    }
+
+    .online-request .dropdown-menu li:last-child{
+        padding-bottom: 10px;
+    }
+
+/* Input data form styles */
+.form-group {
+    margin: 20px 0;
+    font-size: 1.25rem;
+}
+
+.form-control {
+    height: 48px;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #c6c6b9 !important;
+    padding: 0 0 4px 13px;
+    border-radius: 0;
+
+}
+
+     /* Placeholder color */
+    .online-request input::-moz-placeholder          {color: black !important;}
+    .online-request input::-webkit-input-placeholder {color: black !important;}
+    .online-request input:-moz-placeholder           {color: black !important;}
+    .online-request input:-ms-input-placeholder      {color: black !important;}
+
+.submit {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+.mob-btn {
+    display: none;
+}
+
+
+
+/* Propositions styles */
+.proposition1 {
+    margin: 22px 60px 0 0;
+    min-height: 300px;
+    position: relative;
+    background-color: #6ad4a6;
+    color: white;
+    overflow: hidden;    
+}
+
+.HH {
+    font-family: 'FuturaPT-Demi';
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; 
+}
+
+    .HH a:hover{
+        color: #dcdf3c;
+        transition: all 0.3s ease;
+    }
+
+.proposition1 .P2, .proposition2 .P2{
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.proposition1 #mastercard {
+    position: relative;
+    left: 0;
+    top: 86px;
+}
+
+.proposition1 #flowerpot {
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+.proposition2 {
+    margin: 20px 60px 20px 0;
+    min-height: 300px;
+    position: relative;
+    background-color: #ebb641;
+    color: white;
+    overflow: hidden;
+}
+
+.proposition2 #house {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #212628;    
+}
+
+/* Main footer content styles */
+section {
+    padding: 0 60px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.footer-container {
+    padding: 50px 0;
+}
+
+.footer-title {
+    font-family: 'FuturaPT-Demi';
+    text-transform: uppercase;
+    color: #585b5c;
+    font-size: .6875rem;
+    margin-bottom: 1rem;
+}
+
+    .footer-container ul {
+        font-family: "Roboto Condensed";
+        font-size: 1rem;
+        color: white;
+        line-height: 1.87;
+        color:  #ebebeb;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-container ul li a:hover{
+        color: #DCE123;
+    }
+
+    .footer-container .contact-tel {
+        font-family: "Roboto Condensed";
+        color: #ebebeb;
+        font-size: 1.313rem;
+        font-weight: 600;
+    }
+
+    .footer-container .instruction {
+        font-family: "Roboto Condensed";
+        display: block;
+        color: #585b5c;
+        line-height: 1.25;
+    }
+
+    .footer-container img {
+        width: 26px;
+        height: 26px;
+        overflow: hidden;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+        .footer-container img:hover {
+            background-color: #dcdf3c;
+        }
+
+/* Copyright styles */
+.copyright {
+    padding: 0 0 50px 60px;
+}
+
+    .copyright span {
+        color: #585b5c;
+        font-size: .6875rem;
+        font-weight: 500;
+        font-family: 'FuturaPTBold';
+    }
+
+.license {
+        font-family: "Roboto Condensed" !important;
+        font-size: .875rem !important;
+}
+
+/* Site shadowing styles */
+.site-overlay {
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.site-overlay-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Media querries */
+/* Large monitor styles */
+@media screen and (min-width:1301px) {
+    
+    .open-slide {
+        -ms-transform: translateX(0); /* IE 9 */
+        -webkit-transform: translateX(0); /* Safari */
+        transform: translateX(0);
+    }
+
+    .side-menu{
+        -ms-transform: translateX(0); /* IE 9 */
+        -webkit-transform: translateX(0); /* Safari */
+        transform: translateX(0);
+    }
+    
+    .site-overlay-visible {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .text-wrapper{
+        padding-left: 60px;
+    }
+    
+    .top-right-menu {
+        right: 260px;
+    }
+    
+    .logo {
+        margin-left: 20px;
+    }
+    
+    .preview-block, .howto-posit, 
+    .proposition1, .proposition2, 
+    .online-request, .table {
+        margin-right: 260px;
+    }
+    
+    .header-bottom {
+        right: 15.25rem;
+    }
+        
+    
+}
+
+/* Small-medium monitor styles */
+
+@media screen and (max-width:1200px) {
+    
+    .open-slide {
+        -ms-transform: translateX(0); /* IE 9 */
+        -webkit-transform: translateX(0); /* Safari */
+        transform: translateX(0);
+    }
+
+    .side-menu{
+        -ms-transform: translateX(0); /* IE 9 */
+        -webkit-transform: translateX(0); /* Safari */
+        transform: translateX(0);
+        display: none;
+    }
+    
+    .site-overlay-visible {
+    visibility: hidden;
+    opacity: 0;
+    }
+    
+    
+    .text-wrapper {
+        padding-left: 60px;
+    }
+    
+    .header img {
+        margin-left: 60px;
+    }
+    
+    .mobile-header {
+        display: block;
+    }
+    
+    .header-top, .header-bottom, .howto-posit iframe, .howto-posit button, .table .btn-group {
+        display: none;
+    }
+    
+    .preview-block, .howto-posit, 
+    .proposition1, .proposition2, 
+    .online-request, .table {
+        margin-right: 0px;
+    }
+    
+    .proposition1 #flowerpot, .proposition2 #house {
+        right: 0;
+    }
+    
+    .preview-block .preview-info {
+        position: relative;
+        width: 100%;
+        bottom: -50px;
+        z-index: 2;
+        margin-bottom: 50px;
+        right: 0;
+    }
+    
+    .btn-blue {
+        margin-top: 10px;
+    }
+    
+    .loyalty, .howto-posit, .online-request {
+        margin-top: 20px;
+    }
+    
+    .helpful-info .H3 {
+    line-height: .8;
+}
+    
+    
+    
+    
+    
+    
+    
+}
+
+/* Small screen styles */
+@media screen and (max-width:640px){
+    
+        .online-request .switch, .online-request .btn-group, #formfields  {
+            display: none;
+        }
+    
+        .mob-btn {
+            display: block;
+        }
+        
+        .submit {
+            margin: 0 0 30px 0;
+        }
+        
+        .proposition1 #flowerpot, .proposition2 #house {
+            right: -70px;
+            height: 120%;
+            top: 65px;
+        }
+        
+}
+
+
+/* Some side menu tricks for screens with small height */
+@media screen and (max-height:585px) {
+    .bottom {
+        display: none;
+    } 
+}
+
