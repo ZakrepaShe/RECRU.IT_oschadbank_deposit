@@ -65,7 +65,8 @@ i {
         font-family: "Roboto Condensed";
         padding: 0;
         font-size: 1rem;
-        padding: .375rem .375rem .375rem 40px;   
+        padding: .375rem .375rem .375rem 40px;  
+        position: relative;  
     }
 
     .side-menu i{
@@ -120,6 +121,31 @@ i {
     letter-spacing: .1em;
 }
 
+/* List side menu hover styles*/
+#oschad247  li:nth-child(n+3) a::before, #services li a::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #b99dc4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: width 0.3s 0s;
+}
+
+#services li a::before {
+    background-color: #fbaa69;
+}
+
+#services li:first-child a::before, #services li:last-child a::before {
+    background-color: transparent !important;
+}
+
+#oschad247  li:nth-child(n+3):hover a::before, #services li:hover a::before {
+    width: 100%;
+}
+
 /* Icon side menu styles*/
 .key {
     margin-left: -25px;
@@ -147,6 +173,7 @@ i {
     border-bottom: 1px solid #2f3335;
     border-top: 1px solid #2f3335;
     transition: all 0.3s ease; 
+    color: #dcdf3c;
 }
 
 .web-bank:hover, .departments:hover {
