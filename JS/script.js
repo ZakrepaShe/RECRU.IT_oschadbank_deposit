@@ -49,5 +49,17 @@ $(".dropdown-menu li a").click(function() {
 	$(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
 });
 
+var html = document.documentElement;
+
+$(".font-switcher .bigger").click(function() {
+  // with help of JS increase html font size up for 2px
+  html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) + 2 + 'px';
+});
+
+$(".font-switcher .smaller").click(function() {
+  // with help of JS decrease html font size up for 2px
+  html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) - 2 + 'px';
+});
+
 
 });
